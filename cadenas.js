@@ -4,9 +4,9 @@ estudiante = `${nombre} ${apellido}`;  // es lo mismo que poner nombre + " " + a
 estudianteMayus = estudiante.toUpperCase();
 estudianteMinus = estudiante.toLowerCase();
 cantLetras = estudiante.length;
-primeraLetraNombre = nombre.charAt(0);
-ultimaLetraApellido = apellido.charAt(9);
-eliminaEspacios = estudiante.trim();
-incluido = estudiante.includes("Tony");
+primeraLetraNombre = nombre.at(0);
+ultimaLetraApellido = apellido[apellido.length-1];
+eliminaEspacios = estudiante.replace(/ /g, "");
+incluido = estudiante.includes(nombre);
 
 console.log("El nombre del estudiante esta incluido: " + incluido); 
